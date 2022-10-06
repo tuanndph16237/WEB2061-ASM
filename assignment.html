@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment1</title>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+    <h1>Order List</h1>
+    <div class="mb-3">
+        <label class="form-label" for="">Tên món ăn</label>
+        <input type="text" class="form-control" id="name" required>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="">Số lượng</label>
+        <input type="number" class="form-control" id="amount" required>
+        <div class="invalid-feedback">Do not empty amount.</div>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="">Giá</label>
+        <input type="number" class="form-control" id="price" required>
+        <div class="invalid-feedback">Price is not empty.</div>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="">Loại đồ ăn</label>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Open this select menu</option>
+          <option value="">Tráng miệng</option>
+          <option value="">Đồ ăn nhẹ</option>
+          <option value="">Đồ uống</option>
+          <option value="">Đồ nướng</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="">Images</label>
+        <input class="form-control" type="file" id="image" accept="image/png, image/gif, image/jpeg">
+        <img src="" alt="" id="preview-image">
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="">Description</label>
+        <textarea class="form-control" id="description" rows="3"></textarea>
+      </div>
+      <button type="button" class="btn btn-primary">Add New</button>
+      <span class="border border-primary">
+        <table class="table table-striped table-hover">
+          <thead>
+            <td>STT</td>
+            <td>Tên món ăn</td>
+            <td>Số lượng</td>
+            <td>Loại đồ ăn</td>
+            <td>Hết hàng</td>
+        </thead>
+        </table>
+      </span>
+      <script type="module" src="/app.js"></script>
+</body>
+</html>
