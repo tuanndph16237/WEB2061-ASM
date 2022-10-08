@@ -11,6 +11,7 @@ var menu = [
     {name: "Bò lúc lắc", price: 40000, amount: 10},
     {name: "cơm chiên", price: 40000, amount: 10},
     {name: "Bánh Brownie", price: 40000, amount: 10},
+    {name: "Mojito", price: 40000, amount: 10},
 ]
 // localStorage.setItem("menu", JSON.stringify(menu))
 // console.log(localStorage.getItem("menu"), "menu====");
