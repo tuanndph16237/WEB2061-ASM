@@ -4,14 +4,14 @@ import {localStorageService} from './service.js'
 // Localstorage
 // getItem, setItem, removeItem
 var menu = [
-    {name: "Phở bò", price: 40000, amount: 10},
-    {name: "Bún chả", price: 40000, amount: 10},
-    {name: "Mì ý", price: 40000, amount: 10},
-    {name: "Súp", price: 40000, amount: 10},
-    {name: "Bò lúc lắc", price: 40000, amount: 10},
-    {name: "cơm chiên", price: 40000, amount: 10},
-    {name: "Bánh Brownie", price: 40000, amount: 10},
-    {name: "Mojito", price: 40000, amount: 10},
+    {id: 1, name: "Phở bò", price: 40000, amount: 10},
+    {id: 1, name: "Bún chả", price: 40000, amount: 10},
+    {id: 1, name: "Mì ý", price: 40000, amount: 10},
+    {id: 1, name: "Súp", price: 40000, amount: 10},
+    {id: 1, name: "Bò lúc lắc", price: 40000, amount: 10},
+    {id: 1, name: "cơm chiên", price: 40000, amount: 10},
+    {id: 1, name: "Bánh Brownie", price: 40000, amount: 10},
+    {id: 1, name: "Mojito", price: 40000, amount: 10},
 ]
 // localStorage.setItem("menu", JSON.stringify(menu))
 // console.log(localStorage.getItem("menu"), "menu====");
@@ -54,3 +54,4 @@ console.log(localStorageService.get('menu'));
 //     reader.onloadend = function() {
 //     }
 // }
+function validate()
